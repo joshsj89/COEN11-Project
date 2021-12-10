@@ -1,8 +1,8 @@
 /*
 *****************************************************************
 *
-*                   Project   Encryption                
-*                   COEN 11 -- Fall 2021
+*                  Project   Encryption Tool              
+*                     COEN 11 -- Fall 2021
 *
 *****************************************************************
 */
@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h> //for atoi
 
-void read_binary(char *key, char *name1, char *name2);
+void encrypt_decrypt(char *key, char *name1, char *name2);
 
 int main(int argc, char *argv[])
 {
@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    read_binary(argv[1], argv[2], argv[3]);
+    encrypt_decrypt(argv[1], argv[2], argv[3]);
 }
 
-void read_binary(char *key, char *name1, char *name2)
+void encrypt_decrypt(char *key, char *name1, char *name2)
 {
     FILE *fp1, *fp2;
 
